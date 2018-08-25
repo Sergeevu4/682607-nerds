@@ -32,7 +32,7 @@
 			<a class="page-header__basket" href="#">Корзина</a>
 		</header>
 	</div>
-	<main class="main">
+	<main class="page-main">
 		<h1 class="visually-hidden">Дизайн-студия &#171;Nerds&#187;</h1>
 		<section class="advantages-slide">
 			<h2 class="visually-hidden">Преимущества нашей дизайн-студии</h2>
@@ -53,8 +53,8 @@
 				<p class="advantages-slide__descr">Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
 				<a class="btn btn--slide" href="#">Узнать больше</a> 
 			</div>
-	
-			<div class="advantages-slide__toggles slide-toggles">
+
+			<div class="slide-toggles advantages-slide__toggles">
 				<button class="slide-toggles__btn slide-toggles__btn--current">
 					<span class="visually-hidden">Слайд №1</span>
 				</button>
@@ -69,7 +69,7 @@
 		<section class="skills">
 			<h2 class="visually-hidden">Перечень услуг нашей дизайн-студии</h2>
 			<ul class="skills__list">
-				<li class="skills__item skills__item--website>
+				<li class="skills__item skills__item--website">
 					<h3 class="skills__title">Веб-сайты</h3>
 					<p class="skills__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 					<a class="btn btn__skills" href="#">Заказать</a>
@@ -98,11 +98,116 @@
 					<li class="about-us__item">Слайдшоу и видео для корпоративных презентаций</li>
 				</ul>
 			</div>
-			
 		</section>
-		
+		<section class="about-us__brief"> 
+			<h2 class="visually-hidden">Сильные стороны нашей дизайн-студии</h2>
+			<img class="about-us__logo" src="#" alt="Логотип студии Nerds" width="" height="">
+			<table class="about-us__stats stats-table">
+				<caption class="stats-table__title"></caption>
+				<tr class="stats-table__column">
+					<td class="stats-table__cell">146<span class="stats-table__percentage">%</span></td>
+					<td class="stats-table__cell">100<span class="stats-table__percentage">%</span></td>
+					<td class="stats-table__cell">50<span class="stats-table__percentage">%</span></td>
+				</tr>
+				<tr>
+					<td class="stats-table__cell">Уровень самоотдачи</td>
+					<td class="stats-table__cell">Соблюдение сроков</td>
+					<td class="stats-table__cell">Минимальная предоплата</td>
+				</tr>
+			</table>
+		</section>
+		<section class="orders">
+			<h2 class="visually-hidden">Наши выполненные заказы</h2>
+			<ul class="orders__list">
+				<li class="orders__item">
+					<a class="orders__link" href="#">
+						<img class="orders__logo" src="" alt="" width="" height="">
+					</a>
+				</li>
+				<li class="orders__item">
+					<a class="orders__link" href="#">
+						<img class="orders__logo" src="" alt="" width="" height="">
+					</a>
+				</li>
+				<li class="orders__item">
+					<a class="orders__link" href="#">
+						<img class="orders__logo" src="" alt="" width="" height="">
+					</a>
+				</li>
+				<li class="orders__item">
+					<a class="orders__link" href="#">
+						<img class="orders__logo" src="" alt="" width="" height="">
+					</a>
+				</li>
+			</ul>
+
+		<section class="find-us">
+			<h2 class="visually-hidden">Как нас найти</h2>
+			<div class="find-us__descr">
+				<h3 class="find-us__title">Nёrds design studio</h3>
+				<p class="find-us__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p class="find-us__contacts">
+					<a class="find-us__phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+				</p>
+				<a class="btn find-us__btn" href="#">Напишите нам</a>
+			</div>
+		</section>
+
+		<section class="popup">
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<h3 classs="popup-title">Напишите нам</h3>
+			<form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+				<div class="popup-form__container">
+					<p class="popup-form__input">
+						<label class="input-text">Ваше имя:
+							<input  class="input-text_field" type="text" name="user_name" placeholder="Имя Фамилия">
+						</label>
+					</p>
+					<p class="popup-form__input">
+						<label class="input-text">Ваш e-mail:
+							<input  class="input-text_field" type="text" name="user_mail"placeholder="email@example.com">
+						</label>
+					</p>
+					<p class="popup-form__input">
+						<label class="input-text">Текст письма:
+							<textarea class="input-text_field input-text_field--textarea" name="user_mail-text" placeholder="В свободной форме"></textarea>
+						</label>
+					</p>
+					<div class="popup-form_btn">
+						<button class="btn popup-btn" type="submit">Отправить</button>
+					</div>
+				</div>
+			</form>
+			<div class="popup-сlose">
+				<button class="btn popup-сlose_btn" type="button">
+					<span class="visually-hidden">Закрыть форму</span>
+				</button>
+			</div>
+		</section>
 	</main>
-
-
+	<footer class="page-footer">
+		<ul class="social-icons">
+			<li class="social-icons__item">
+				<a class="social-icons__link" href="#">
+				<span class="visually-hidden">ВКонтакте</span>
+				</a>
+			</li>
+			<li class="social-icons__item">
+				<a class="social-icons__link" href="#">
+					<span class="visually-hidden">Фейсбук</span>
+				</a>
+			</li>
+			<li class="social-icons__item">
+				<a class="social-icons__link" href="#">
+					<span class="visually-hidden">Инстаграмм</span>
+				</a>
+			</li>
+		</ul>
+		<div class="footer-slogan">
+			<p class="footer-slogan__title"></p>
+			<p class="footer-slogan__info"></p>
+		</div>
+	</footer>
+	
 </body>
 </html>
