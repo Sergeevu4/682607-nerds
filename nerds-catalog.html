@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Проект Nёrds </title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="page-header">
+		<a class="page-header__logo" href="index.html">
+			<img class="nerds-logo" src="img/nerds-logo.svg" alt="Логотип сайта Nerds" width="160px" height="65px">
+		</a>
+		<nav class="page-header__menu">
+			<ul class="nav-site">
+				<li class="nav-site__item">
+					<a href="index.html" class="nav-site__link">Студия</a>
+				</li>
+				<li class="nav-site__item">
+					<a href="#" class="nav-site__link">Клиенты</a>
+				</li>
+				<li class="nav-site__item nav-site__item--current">
+					<a class="nav-site__link">Магазин</a>
+				</li>
+				<li class="nav-site__item">
+					<a href="#" class="nav-site__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<a class="page-header__basket" href="#">Корзина</a>
+	</header>
+
+	<main class="main-page">
+		<h1 class="main-page__title">Магазин готовых шаблонов</h1>
+		<div class="filter-catalog container">
+			<section class="filter-catalog__grid">
+				<h2 class="visually-hidden">Фильтр дизайн-проектов</h2>
+				<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+					<fieldset class="filter-field">
+						<legend class="filter-field__title">Стоимость:</legend>
+						<div class="price-slider">
+							<div class="price-slider__scale"></div>
+							<button type="button" class="btn-range btn-range--from">
+								<span class="visually-hidden">Диапазон цены от</span>
+							</button>
+							<button type="button" class="btn-range btn-range--up">
+								<span class="visually-hidden">Диапазон цены до</span>
+							</button>
+						</div>
+						<div class="price-outputs">
+							<label class="price-outputs__label" for="price-outputs__from">От
+								<input class="price-outputs__input" type="text" name="priceday-from" placeholder="0"></label>
+							<label class="price-outputs__label" for="price-outputs__up">До
+								<input class="price-outputs__input" type="text" name="priceday-up" placeholder="15 000">
+							</label>
+						</div>
+					</fieldset>
+					<fieldset class="filter-field">
+						<legend class="filter-field__title">Сетка:</legend>
+						<ul class="grid-list">
+							<li class="grid-item">
+								<label class="grid-label">
+									<input class="grid-radio" type="radio" name="grid-site" value="Adaptive" checked >Адаптивная
+								</label>
+							</li>
+							<li class="grid-item">
+								<label class="grid-label">
+									<input class="grid-radio" type="radio" name="grid-site" value="Fixed">Фиксированная
+								</label>
+							</li>
+							<li class="grid-item">
+								<label class="grid-label">
+									<input class="grid-radio" type="radio" name="grid-site" value="Rubber">Резиновая
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="filter-field">
+						<legend class="filter-field__title">Особенности:</legend>
+						<ul class="grid-list">
+							<li class="grid-item">
+								<label class="grid-label">
+									<input class="grid-checkbox" type="checkbox" name="slider" checked>Слайдер
+								</label>
+							</li>
+							<li class="grid-item">
+								<label class="grid-label">
+									<input class="grid-checkbox" type="checkbox" name="advantages">Блок преимуществ
+								</label>
+							</li>
+							<li class="grid-item">
+								<label class="grid-label">
+									<input class="grid-checkbox" type="checkbox" name="news" checked>Новости
+								</label>
+							</li>
+							<li class="grid-item">
+								<label class="grid-label">
+									<input class="grid-checkbox" type="checkbox" name="gallery">Галерея
+								</label>
+							</li>
+							<li class="grid-item">
+								<label class="grid-label">
+									<input class="grid-checkbox" type="checkbox" name="basket">Корзина
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button type="submit" class="btn btn--form">Показать</button>
+				</form>
+			</section>
+			<section class="filter-catalog__find">
+				<h2 class="visually-hidden">Шаблоны дизайн-проектов</h2>
+				<div class="sorting">
+					<p class="sorting__title">Сортировать:</p>
+					<ul class="sorting__list">
+						<li class="sorting__item">
+							<a class="sorting__link sorting__link--current" href="#">По цене</a>
+						</li>
+						<li class="sorting__item">
+							<a class="sorting__link" href="#">По типу</a>
+						</li>
+						<li class="sorting__item">
+							<a class="sorting__link" href="#">По названию</a>
+						</li>
+					</ul>
+					<ul class="sorting-arrow">
+						<li class="sorting-arrow__item">
+							<a class="sorting-arrow__link sorting-arrow__link--down" href="#">
+								<span class="visually-hidden">По убыванию</span>
+							</a>
+						</li>
+						<li class="sorting-arrow__item">
+							<a class="sorting-arrow__link sorting-arrow__link--up" href="#">
+								<span class="visually-hidden">По возрастанию</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="card-find">
+					<ul class="card-find__list">
+						<li class="card-find__item">
+							<img class="card-find__img" src="img/img-sedona.jpg-min.jpg" alt="Sedona информационный сайт для туристов" width="360" height="576">
+							<div class="card-find__descr">
+								<h3 class="card-find__title"> 
+									<a href="#">Sedona</a>
+								</h3>
+								<p class="card-find__text">Информационный сайт для&nbsp;туристов</p>
+								<a class="btn btn--card" href="#">9 900 руб.</a>
+							</div>
+						</li>
+						<li class="card-find__item">
+							<img class="card-find__img" src="img/img-pink.jpg-min.png" alt="Pink app Продуктовый лендинг приложения для iOS и Android" width="360" height="576">
+							<div class="card-find__descr">
+								<h3 class="card-find__title"> 
+									<a href="#">Pink app</a>
+								</h3>
+								<p class="card-find__text">Продуктовый лендинг приложения для iOS и Android</p>
+								<a class="btn btn--card" href="#">9 900 руб.</a>
+							</div>
+						</li>
+						<li class="card-find__item">
+							<img class="card-find__img" src="img/img-barbershop.jpg-min.jpg" alt="Barbershop Сайт салона красоты" width="360" height="576">
+							<div class="card-find__descr">
+								<h3 class="card-find__title"> 
+									<a href="#">Barbershop</a>
+								</h3>
+								<p class="card-find__text">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
+								<a class="btn btn--card" href="#">9 900 руб.</a>
+							</div>
+						</li>
+						<li class="card-find__item">
+							<img class="card-find__img" src="img/img-mishka.jpg-min.jpg" alt="Mishka Интернет-магазин вязаных игрушек" width="360" height="576">
+							<div class="card-find__descr">
+								<h3 class="card-find__title"> 
+									<a href="#">Mishka</a>
+								</h3>
+								<p class="card-find__text">Интернет-магазин вязаных&nbsp;игрушек</p>
+								<a class="btn btn--card" href="#">9 900 руб.</a>
+							</div>
+						</li>
+						<li class="card-find__item">
+							<img class="card-find__img" src="img/img-aplus.jpg-min.jpg" alt="A plus Лендинг курсов повышения квалификации" width="360" height="576">
+							<div class="card-find__descr">
+								<h3 class="card-find__title"> 
+									<a href="#">A plus</a>
+								</h3>
+								<p class="card-find__text">Лендинг курсов повышения квалификации</p>
+								<a class="btn btn--card" href="#">9 900 руб.</a>
+							</div>
+						</li>
+						<li class="card-find__item">
+							<img class="card-find__img" src="img/img-kvast.jpg-min.jpg" alt="Кваст Промо-сайт производителя крафтового кваса" width="360" height="576">
+							<div class="card-find__descr">
+								<h3 class="card-find__title"> 
+									<a href="#">Кваст</a>
+								</h3>
+								<p class="card-find__text">Промо-сайт производителя крафтового кваса</p>
+								<a class="btn btn--card" href="#">9 900 руб.</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="page-number">
+					<ul class="page-number__list">
+						<li class="page-number__item">
+							<a class="page-number__link page-number__link--current" href="#">1</a>
+						</li>
+						<li class="page-number__item">
+							<a class="page-number__link" href="#">2</a>
+						</li>
+						<li class="page-number__item">
+							<a class="page-number__link" href="#">3</a>
+						</li>
+						<li class="page-number__item">
+							<a class="page-number__link page-number__link--big" href="#">Следующая</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<section class="find-us">
+			<h2 class="visually-hidden">Как нас найти</h2>
+			<div class="find-us__descr">
+				<h3 class="find-us__title">Nёrds design studio</h3>
+				<p class="find-us__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p class="find-us__contacts">
+					<a class="find-us__phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+				</p>
+				<a class="btn btn--find-us" href="#">Напишите нам</a>
+			</div>
+		</section>
+		<section class="popup">
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<h3 classs="popup-title">Напишите нам</h3>
+			<form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+				<div class="popup-form__container">
+					<p class="popup-form__input">
+						<label class="input-text">Ваше имя:
+							<input  class="input-text_field" type="text" name="user_name" placeholder="Имя Фамилия">
+						</label>
+					</p>
+					<p class="popup-form__input">
+						<label class="input-text">Ваш e-mail:
+							<input  class="input-text_field" type="text" name="user_mail"placeholder="email@example.com">
+						</label>
+					</p>
+					<p class="popup-form__input">
+						<label class="input-text">Текст письма:
+							<textarea class="input-text_field input-text_field--textarea" name="user_mail-text" placeholder="В свободной форме"></textarea>
+						</label>
+					</p>
+					<div class="popup-form_btn">
+						<button class="btn btn--popup" type="submit">Отправить</button>
+					</div>
+				</div>
+			</form>
+			<div class="popup-сlose">
+				<button class="btn btn--popup-сlose" type="button">
+				<span class="visually-hidden">Закрыть форму</span>
+				</button>
+			</div>
+		</section>
+	</main>
+
+<footer class="page-footer">
+	<ul class="social-icons">
+		<li class="social-icons__item">
+			<a class="social-icons__link" href="#">
+				<span class="visually-hidden">ВКонтакте</span>
+			</a>
+		</li>
+		<li class="social-icons__item">
+			<a class="social-icons__link" href="#">
+				<span class="visually-hidden">Фейсбук</span>
+			</a>
+		</li>
+		<li class="social-icons__item">
+			<a class="social-icons__link" href="#">
+				<span class="visually-hidden">Инстаграмм</span>
+			</a>
+		</li>
+	</ul>
+	<div class="footer-slogan">
+		<p class="footer-slogan__title">Давайте дружить, это выгодно!</p>
+		<p class="footer-slogan__info">Скидка 10% для друзей из социальных сетей.</p>
+	</div>
+</footer>
+</body>
+</html>

@@ -11,28 +11,28 @@
 	<div class="header-wrapper">
 		<header class="page-header">
 			<a class="page-header__logo">
-				<img class="nerds-logo" src="" alt="Логотип сайта Nerds" width="" height="">
+				<img class="nerds-logo" src="img/nerds-logo.svg" alt="Логотип сайта Nerds" width="160px" height="65px">
 			</a>
 			<nav class="page-header__menu">
 				<ul class="nav-site">
-					<li class="nav-site__item">
-						<a href="" class="nav-site__link nav-site__link--current">Студия</a>
+					<li class="nav-site__item nav-site__item--current">
+						<a class="nav-site__link">Студия</a>
 					</li>
 					<li class="nav-site__item">
-						<a href="" class="nav-site__link">Клиенты</a>
+						<a href="#" class="nav-site__link">Клиенты</a>
 					</li>
 					<li class="nav-site__item">
-						<a href="" class="nav-site__link">Магазин</a>
+						<a href="nerds-catalog.html" class="nav-site__link">Магазин</a>
 					</li>
 					<li class="nav-site__item">
-						<a href="" class="nav-site__link">Контакты</a>
+						<a href="#" class="nav-site__link">Контакты</a>
 					</li>
 				</ul>
 			</nav>
 			<a class="page-header__basket" href="#">Корзина</a>
 		</header>
 	</div>
-	<main class="page-main">
+	<main class="main-page">
 		<h1 class="visually-hidden">Дизайн-студия &#171;Nerds&#187;</h1>
 		<section class="advantages-slide">
 			<h2 class="visually-hidden">Преимущества нашей дизайн-студии</h2>
@@ -72,17 +72,17 @@
 				<li class="skills__item skills__item--website">
 					<h3 class="skills__title">Веб-сайты</h3>
 					<p class="skills__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a class="btn btn__skills" href="#">Заказать</a>
+					<a class="btn btn--red" href="#">Заказать</a>
 				</li>
 				<li class="skills__item skills__item--applications">
 					<h3 class="skills__title">Приложения</h3>
 					<p class="skills__text">Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a class="btn btn__skills--green" href="#">Заказать</a>
+					<a class="btn btn--green" href="#">Заказать</a>
 				</li>
 				<li class="skills__item skills__item--presentations">
 					<h3 class="skills__title">Презентации</h3>
 					<p class="skills__text">Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a class="btn btn__skills--yellow" href="#">Заказать</a>
+					<a class="btn btn--yellow" href="#">Заказать</a>
 				</li>
 			</ul>
 		</section>
@@ -99,10 +99,10 @@
 				</ul>
 			</div>
 		</section>
-		<section class="about-us__brief"> 
+		<section class="our-strength"> 
 			<h2 class="visually-hidden">Сильные стороны нашей дизайн-студии</h2>
-			<img class="about-us__logo" src="#" alt="Логотип студии Nerds" width="" height="">
-			<table class="about-us__stats stats-table">
+			<img class="our-strength__logo" src="img/nerds-illustration-min.png" alt="Логотип студии Nerds" width="360" height="208">
+			<table class="our-strength__stats stats-table">
 				<caption class="stats-table__title"></caption>
 				<tr class="stats-table__column">
 					<td class="stats-table__cell">146<span class="stats-table__percentage">%</span></td>
@@ -120,23 +120,23 @@
 			<h2 class="visually-hidden">Наши выполненные заказы</h2>
 			<ul class="orders__list">
 				<li class="orders__item">
-					<a class="orders__link" href="#">
-						<img class="orders__logo" src="" alt="" width="" height="">
+					<a class="orders__link" href="https://htmlacademy.ru/intensive/htmlcss">
+						<img class="orders__logo" src="img/logo-1.png" alt="HTMLAcademy" width="199" height="68">
 					</a>
 				</li>
 				<li class="orders__item">
 					<a class="orders__link" href="#">
-						<img class="orders__logo" src="" alt="" width="" height="">
+						<img class="orders__logo" src="img/logo-2.png" alt="Barbershop Borodinsky" width="209" height="90">
 					</a>
 				</li>
 				<li class="orders__item">
 					<a class="orders__link" href="#">
-						<img class="orders__logo" src="" alt="" width="" height="">
+						<img class="orders__logo" src="img/logo-3.png" alt="Pink App" width="185" height="52">
 					</a>
 				</li>
 				<li class="orders__item">
 					<a class="orders__link" href="#">
-						<img class="orders__logo" src="" alt="" width="" height="">
+						<img class="orders__logo" src="img/logo-4.png" alt="Mishka" width="173" height="84">
 					</a>
 				</li>
 			</ul>
@@ -149,7 +149,7 @@
 				<p class="find-us__contacts">
 					<a class="find-us__phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
 				</p>
-				<a class="btn find-us__btn" href="#">Напишите нам</a>
+				<a class="btn btn--find-us" href="#">Напишите нам</a>
 			</div>
 		</section>
 
@@ -174,40 +174,39 @@
 						</label>
 					</p>
 					<div class="popup-form_btn">
-						<button class="btn popup-btn" type="submit">Отправить</button>
+						<button class="btn btn--popup" type="submit">Отправить</button>
 					</div>
 				</div>
 			</form>
 			<div class="popup-сlose">
-				<button class="btn popup-сlose_btn" type="button">
-					<span class="visually-hidden">Закрыть форму</span>
+				<button class="btn btn--popup-сlose" type="button">
+				<span class="visually-hidden">Закрыть форму</span>
 				</button>
 			</div>
 		</section>
 	</main>
-	<footer class="page-footer">
-		<ul class="social-icons">
-			<li class="social-icons__item">
-				<a class="social-icons__link" href="#">
-				<span class="visually-hidden">ВКонтакте</span>
-				</a>
-			</li>
-			<li class="social-icons__item">
-				<a class="social-icons__link" href="#">
-					<span class="visually-hidden">Фейсбук</span>
-				</a>
-			</li>
-			<li class="social-icons__item">
-				<a class="social-icons__link" href="#">
-					<span class="visually-hidden">Инстаграмм</span>
-				</a>
-			</li>
-		</ul>
-		<div class="footer-slogan">
-			<p class="footer-slogan__title"></p>
-			<p class="footer-slogan__info"></p>
-		</div>
-	</footer>
-	
+<footer class="page-footer">
+	<ul class="social-icons">
+		<li class="social-icons__item">
+			<a class="social-icons__link" href="#">
+			<span class="visually-hidden">ВКонтакте</span>
+			</a>
+		</li>
+		<li class="social-icons__item">
+			<a class="social-icons__link" href="#">
+				<span class="visually-hidden">Фейсбук</span>
+			</a>
+		</li>
+		<li class="social-icons__item">
+			<a class="social-icons__link" href="#">
+				<span class="visually-hidden">Инстаграмм</span>
+			</a>
+		</li>
+	</ul>
+	<div class="footer-slogan">
+		<p class="footer-slogan__title">Давайте дружить, это выгодно!</p>
+		<p class="footer-slogan__info">Скидка 10% для друзей из социальных сетей.</p>
+	</div>
+</footer>
 </body>
 </html>
