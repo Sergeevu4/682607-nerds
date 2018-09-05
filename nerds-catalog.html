@@ -3,33 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Проект Nёrds </title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="page-header">
-		<a class="page-header__logo" href="index.html">
-			<img class="nerds-logo" src="img/nerds-logo.svg" alt="Логотип сайта Nerds" width="160px" height="65px">
-		</a>
-		<nav class="page-header__menu">
-			<ul class="nav-site">
-				<li class="nav-site__item">
-					<a href="index.html" class="nav-site__link">Студия</a>
-				</li>
-				<li class="nav-site__item">
-					<a href="#" class="nav-site__link">Клиенты</a>
-				</li>
-				<li class="nav-site__item nav-site__item--current">
-					<a class="nav-site__link">Магазин</a>
-				</li>
-				<li class="nav-site__item">
-					<a href="#" class="nav-site__link">Контакты</a>
-				</li>
-			</ul>
-		</nav>
-		<a class="page-header__basket" href="#">Корзина</a>
-	</header>
+	<div class="header-wrapper">
+		<header class="page-header container">
+			<a class="page-header__logo logo-active" href="index.html">
+				<img class="nerds-logo" src="img/nerds-logo.svg" alt="Логотип сайта Nerds" width="160" height="65">
+			</a>
+			<nav class="page-header__menu">
+				<ul class="nav-site">
+					<li class="nav-site__item ">
+						<a href="#" class="nav-site__link">Студия</a>
+					</li>
+					<li class="nav-site__item">
+						<a href="#" class="nav-site__link">Клиенты</a>
+					</li>
+					<li class="nav-site__item">
+						<a href="nerds-catalog.html" class="nav-site__link nav-site__item--current">Магазин</a>
+					</li>
+					<li class="nav-site__item">
+						<a href="#" class="nav-site__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="page-header__basket" href="#">Корзина</a>
+		</header>
 
 	<main class="main-page">
 		<h1 class="main-page__title">Магазин готовых шаблонов</h1>
@@ -49,10 +50,10 @@
 							</button>
 						</div>
 						<div class="price-outputs">
-							<label class="price-outputs__label" for="price-outputs__from">От
-								<input class="price-outputs__input" type="text" name="priceday-from" placeholder="0"></label>
-							<label class="price-outputs__label" for="price-outputs__up">До
-								<input class="price-outputs__input" type="text" name="priceday-up" placeholder="15 000">
+							<label class="price-outputs__label">От
+							</label>
+							<label class="price-outputs__label">До
+								<input class="price-outputs__input" type="text" name="priceday-up" value="15 000">
 							</label>
 						</div>
 					</fieldset>
@@ -201,19 +202,19 @@
 						</li>
 					</ul>
 				</div>
-				<div class="page-number">
-					<ul class="page-number__list">
-						<li class="page-number__item">
-							<a class="page-number__link page-number__link--current" href="#">1</a>
+				<div class=pagination">
+					<ul class=pagination__list">
+						<li class=pagination__item">
+							<a class="pagination__link page-number__link--current" href="#">1</a>
 						</li>
-						<li class="page-number__item">
-							<a class="page-number__link" href="#">2</a>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">2</a>
 						</li>
-						<li class="page-number__item">
-							<a class="page-number__link" href="#">3</a>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">3</a>
 						</li>
-						<li class="page-number__item">
-							<a class="page-number__link page-number__link--big" href="#">Следующая</a>
+						<li class="pagination__item">
+							<a class="pagination__link page-number__link--big" href="#">Следующая</a>
 						</li>
 					</ul>
 				</div>
@@ -233,7 +234,7 @@
 		</section>
 		<section class="popup">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
-			<h3 classs="popup-title">Напишите нам</h3>
+			<h3 class="popup-title">Напишите нам</h3>
 			<form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="popup-form__container">
 					<p class="popup-form__input">
@@ -243,7 +244,7 @@
 					</p>
 					<p class="popup-form__input">
 						<label class="input-text">Ваш e-mail:
-							<input  class="input-text_field" type="text" name="user_mail"placeholder="email@example.com">
+							<input  class="input-text_field" type="text" name="user_mail" placeholder="email@example.com">
 						</label>
 					</p>
 					<p class="popup-form__input">
