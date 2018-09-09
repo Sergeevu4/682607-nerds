@@ -119,9 +119,10 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 	font-weight: 500;
 	text-transform: uppercase;
+	padding: 4px 0;
 }
 
-.nav-site__item--current {
+.nav-site__link--current {
 	border-bottom: 2px solid #fb565a;
 }
 
@@ -159,6 +160,10 @@ input[type="radio"].visually-hidden {
 .nav-site__link:active,
 .page-header__basket:active {
 	color: #ababab;
+}
+
+.nav-site__item--current:not([href]){
+	color: #000000;
 }
 
 .advantages-slide {
@@ -238,6 +243,7 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	background-color: #fb565a;
 	cursor: pointer;
+	user-select: none;
 }
 
 .btn:hover {
@@ -500,6 +506,7 @@ input[type="radio"].visually-hidden {
 	width: 1160px;
 	padding-top: 13px;
 	margin-bottom: 80px;
+	user-select: none;
 }
 
 .orders__list {
@@ -633,7 +640,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popup--show {
-/*	display: block;*/
+	/*display: block;*/
 }
 
 .popup-title {
@@ -653,6 +660,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	user-select: none;
 }
 
 .popup-form__input {
@@ -703,6 +711,7 @@ input[type="radio"].visually-hidden {
 	height: 118px;
 }
 
+
 .input-text_field:hover {
 	border: 2px solid #b4b9bb;
 }
@@ -712,7 +721,13 @@ input[type="radio"].visually-hidden {
 	border: solid 2px #000000;
 }
 
-.btn--popup-сlose {
+.input-text_field:required:valid {
+	color: #e74246;
+	border: 2px solid #e74246;
+}
+
+
+.popup-сlose {
 	position: absolute;
 	top: 65px;
 	right: 86px;
@@ -724,20 +739,19 @@ input[type="radio"].visually-hidden {
 	opacity: 0.3;
 }
 
-
-.btn--popup-сlose:hover,
-.btn--popup-сlose:focus {
+.popup-сlose:hover,
+.popup-сlose:focus {
 	opacity: 1;
 }
 
-.btn--popup-сlose:active {
+.popup-сlose:active {
 	opacity: 0.1;
 	outline: none;
 }
 
 
-.btn--popup-сlose::before,
-.btn--popup-сlose::after {
+.popup-сlose::before,
+.popup-сlose::after {
 	content: "";
 	position: absolute;
 	top: 13px;
@@ -748,11 +762,11 @@ input[type="radio"].visually-hidden {
 	background-color: #fb565a;
 }
 
-.btn--popup-сlose::before {
+.popup-сlose::before {
 	transform: rotate(45deg);
 }
 
-.btn--popup-сlose::after {
+.popup-сlose::after {
 	transform: rotate(-45deg);
 }
 
@@ -878,6 +892,580 @@ input[type="radio"].visually-hidden {
 
 .footer-slogan__info {
 	color: #444444;
+	margin: 0;
+}
+
+/*----------nerds-catalog-----------*/
+
+.header-wrapper--inner {
+	margin-bottom: 54px;
+}
+
+.main-page__title {
+	color: #000000;
+	font-size: 55px;
+	font-weight: 500;
+	line-height: 55px;
+	width: 1200px;
+	min-height: 235px;
+	margin: 0 auto;
+	padding: 70px 20px 30px;
+	text-align: center;
+}
+
+.filter-catalog {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.filter-catalog__grid {
+	width: 300px;
+	user-select: none;
+}
+
+.filter-form {
+	width: 261px;
+}
+
+.filter-field {
+	border: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 29px;
+	/* width: 316px; */
+}
+
+/*.filter-field--space {
+	margin-bottom: 29px;
+}*/
+
+.filter-field__title {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 14px;
+	word-wrap: break-word;
+}
+
+.price-scale {
+	width: 260px;
+	background-color: #eeeeee;
+	height: 80px;
+	margin-bottom: 14px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.price-scale__box {
+	width: 219px;
+	height: 2px;
+	background-color: #d7dcde;
+	position: relative;
+}
+
+.price-scale__box-min {
+	width: 64%;
+	height: 2px;
+	background-color: #00ca74;
+}
+
+.btn-range {
+	position: absolute;
+	display: block;
+	top: -10px;
+	left: -2px;
+	width: 20px;
+	height: 20px;
+	background-color: #ababab;
+	border: none;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 8px #fff, 0 2px 1px 0px rgba(171, 171, 171, 0.5);
+	cursor: pointer;
+}
+
+
+/*Второй способ как сделать круглую кнопку на слайдере, вместо button - сделать div, или span, тогда нормально будет взаимодействовать border */
+
+.btn-range:active {
+	width: 23px;
+	height: 23px;
+}
+
+
+.btn-range--from {
+	left: 64%;
+}
+
+
+.price-outputs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.price-outputs__label {
+	text-transform: uppercase;
+}
+
+.price-outputs__input {
+	width: 80px;
+/*	height: 38px;*/
+	font: inherit;
+	line-height: 22px;
+
+	text-align: center;
+	border: 0;
+	background-color: #eeeeee;
+
+	padding: 8px 0;
+	margin-left: 8px;
+}
+
+.filter-field--space {
+	margin-bottom: 54px;
+}
+
+.filter-field__title--space {
+	letter-spacing: 0.6px;
+	margin-bottom: 48px;
+}
+
+.grid-list {
+	margin: 0;
+	padding: 0;
+	width: 260px;
+	list-style: none;
+}
+
+.grid-item {
+	margin-bottom: 16px;
+}
+
+.grid-radio,
+.grid-checkbox {
+	/*padding-left: 35px;*/
+	cursor: pointer;
+}
+
+.grid-radio__indicator,
+.grid-chekbox__indicator {
+	display: block;
+	padding-left: 35px;
+	opacity: 0.4;
+	color: #000;
+	word-wrap: break-word;
+	position: relative;
+}
+
+.grid-radio__indicator::before {
+	content: "";
+	position: absolute;
+	top: -1px;
+	left: 1px;
+	width: 25px;
+	height: 25px;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 4px solid #4d4d4d;
+}
+
+.grid-radio__input:checked + .grid-radio__indicator::before {
+	width: 25px;
+	height: 25px;
+	background-color: #4d4d4d;
+	box-shadow: inset 0 0 0 4px #fff; 
+}
+
+
+/*Второй способ как можно было сделать круг внутри и выравнять его 
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: #4d4d4d;
+	*/
+
+
+.grid-radio__indicator:hover,
+.grid-radio__input:focus + .grid-radio__indicator,
+.grid-chekbox__indicator:hover,
+.grid-checkbox__input:focus + .grid-chekbox__indicator
+ {
+	opacity: 1;
+	color: #000;
+}
+
+.grid-radio__input:disabled + .grid-radio__indicator,
+.grid-checkbox__input:disabled + .grid-chekbox__indicator {
+	opacity: 0.2;
+}
+
+
+.grid-chekbox__indicator::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 23px;
+	height: 23px;
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+}
+
+.grid-checkbox__input:checked + .grid-chekbox__indicator::before {
+	width: 27px;
+	height: 23px;
+	background-image: url(../img/checkbox-on.svg);
+	background-repeat: no-repeat;
+}
+
+.btn--big {
+	width: 260px;
+}
+
+.btn--grey {
+	color: #000;
+	font-weight: 500;
+	background-color: #eeeeee;
+}
+
+.btn--grey:hover,
+.btn--grey:focus {
+	background-color: #dfdfdf;
+}
+
+.btn--grey:active {
+	color: rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	background-color: #d5d5d5;
+}
+
+/*-------filter-catalog__find---------*/
+
+.filter-catalog__find {
+	width: 760px;
+	user-select: none;
+}
+
+.sorting {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+	align-items: flex-start;
+	margin-bottom: 48px;
+	padding-top: 3px;
+}
+
+.sorting__title {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: uppercase;
+	word-wrap: break-word;
+	width: 280px;
 
 	margin: 0;
+
+	/* margin-right: auto; */
+}
+
+.sorting__list {
+	margin: 0;
+	margin-left: auto;
+	padding: 0;
+	list-style: none;
+	width: 308px;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.sorting__item {
+	margin-right: 25px;
+}
+
+.sorting__link {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.sorting__link:hover, 
+.sorting__link:focus {
+	opacity: 0.6;
+}
+
+.sorting__link:active {
+	opacity: 1;
+}
+
+.sorting__link:not([href]) {
+	opacity: 1;
+}
+
+
+.sorting-arrow {
+	margin: 0;
+	margin-left: 10px;
+	padding: 0;
+	list-style: none;
+	width: 41px;
+	min-height: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 5px;
+}
+
+
+.sorting-arrow__down,
+.sorting-arrow__up {
+	display: block;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	opacity: 0.4;
+}
+
+.sorting-arrow__down {
+	border-top: 11px solid #a6a6a6;
+}
+
+.sorting-arrow__up {
+	border-bottom: 11px solid #a6a6a6;
+}
+
+.sorting-arrow__down:hover,
+.sorting-arrow__up:hover,
+.sorting-arrow__down:focus,
+.sorting-arrow__up:focus {
+	opacity: 1;
+}
+
+.sorting-arrow__down:active,
+.sorting-arrow__up:active {
+	border-top-color: #000000;
+	border-bottom-color: #000000;
+}
+
+.sorting-arrow__current {
+	border-top-color: #000000;
+	opacity: 1;
+}
+
+/* Второй способ как можно было выбрать одну из стрелок и предать ей цвет
+
+.sorting-arrow__item a:not([href]) {
+	border-top-color: #000000;
+	opacity: 1;
+}*/
+
+
+.card-find {
+	padding-top: 9px;
+	margin-bottom: 28px;
+}
+
+.card-find__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	word-wrap: break-word;
+	overflow: auto;
+	/* padding-top: 9px; */
+}
+
+
+.card-find__item {
+	width: 360px;
+	border: 3px;
+	position: relative;
+	/* border: 1px solid rgba(0, 1, 1, 0.1); */
+	/* padding-top: 53px; */
+	margin-bottom: 33px;
+}
+
+.card-find__item:hover,
+.card-find__item:focus {
+	/*box-shadow: 0px -4px 30px 4px rgba(0,1,1,0.25);*/
+	box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
+
+}
+
+.card-find__item::before {
+	content: "";
+	display: block;
+	width: 360px;
+	height: 40px;
+	/* position: absolute; */
+	/* top: -39px; */
+	/* left: 0px; */
+	border-radius: 3px 3px 0 0;
+	/*	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;*/
+	background: #eaeaea url("data:image/svg+xml,%3Csvg width='80' height='14' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff'%3E%3Ccircle r='7' cy='7' cx='7'/%3E%3Ccircle r='7' cy='7' cx='30'/%3E%3Ccircle r='7' cy='7' cx='53'/%3E%3C/g%3E%3C/svg%3E") no-repeat 16px 13px;
+}
+
+/*Круги сделаны с помощью svg меняется только фон при наведении*/
+
+.card-find__item:hover::before,
+.card-find__item:focus::before {
+	background-color: #4d4d4d;
+}
+
+
+.card-find__img {
+	display: block;
+	width: 360px;
+	height: 576px;
+	background-color: #e9e9e9;
+	outline: 1px solid #e9e9e9;
+	outline-offset: -1px;
+
+/*не забывать прописывать размер */
+}
+
+.card-find__item:hover .card-find__img,
+.card-find__item:focus .card-find__img {
+	outline: none;
+}
+
+
+.card-find__descr {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 360px;
+	min-height: 231px;
+	/*	flex-direction: column;
+	justify-content: flex-start;*/
+	align-items: center;
+	padding: 27px 50px;
+	background-color: #eeeeee;
+}
+
+.card-find__item:hover .card-find__descr, 
+.card-find__item:focus .card-find__descr {
+	display: block;
+}
+
+
+.card-find__title {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 15px;
+	text-align: center;
+
+}
+
+.card-find__link {
+	font: inherit;
+	color: #000000;
+	display: block;
+}
+
+.card-find__link:hover, 
+.card-find__link:hover {
+	opacity: 0.4;
+}
+
+.card-find__link:active {
+	opacity: 0.1;
+}
+
+
+.card-find__text {
+	line-height: 18px;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.btn--card {
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+}
+
+.pagination__list {
+	margin: 0;
+	margin-bottom: 60px;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	word-wrap: break-word;
+}
+
+.pagination__item {
+	margin-right: 12px;
+}
+
+.pagination__item:last-child {
+	margin-right: 0;
+}
+
+
+.pagination__link {
+	display: block;
+	background-color: #eeeeee;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	padding: 15px 20px;
+	text-align: center;
+}
+
+.pagination__link--next {
+	width: 260px;
+}
+
+.pagination__link:hover[href] {
+	background-color: #dfdfdf;
+}
+
+
+.pagination__link:active[href] {
+	color: rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	background-color: #d5d5d5;
+}
+
+.pagination__link--current,
+.pagination__link:not([href]) {
+	box-shadow: inset 0 0 0 3px #dbdbdb;
+	background-color: inherit;
+
+	/*Рамка с помощью тени и внутренний цвет наследуется от body 
+Нельзя использовать outline потомучто нет возможности округлить углы 
+
+	background-color: #ffffff;
+	outline:3px solid #dbdbdb;
+	outline-offset: -2px;
+	*/
 }
