@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Проект Nёrds </title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 	<div class="header-wrapper">
@@ -255,28 +255,28 @@
 			<iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003192!2d30.320858716180815!3d59.93871916905404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1536000863914" width="1440" height="416" allowfullscreen></iframe>
 		</section>
 
-		<section class="popup popup--show">
+		<section class="popup">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
 			<h3 class="popup-title">Напишите нам</h3>
 			<form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="popup-form__container">
 					<p class="popup-form__input">
 						<label class="input-text">Ваше имя:
-							<input class="input-text_field" type="text" name="user_name" placeholder="Имя Фамилия">
+							<input class="input-text__field" type="text" name="user_name" placeholder="Имя Фамилия">
 						</label>
 					</p>
 					<p class="popup-form__input">
 						<label class="input-text">Ваш e-mail:
-							<input  class="input-text_field" type="email" name="user_mail" placeholder="email@example.com" required>
+							<input  class="input-text__field" type="email" name="user_mail" placeholder="email@example.com">
 						</label>
 					</p>
 					<p class="popup-form__input popup-form__input--textarea">
 						<label class="input-text">Текст письма:
-							<textarea class="input-text_field input-text_field--textarea" name="user_mail-text" placeholder="В свободной форме"></textarea>
+							<textarea class="input-text__field input-text__field--textarea" name="user_mail-text" placeholder="В свободной форме"></textarea>
 						</label>
 					</p>
 				</div>
-				<div class="popup-form_btn">
+				<div class="popup-form__btn">
 					<button class="btn btn--popup" type="submit">Отправить</button>
 				</div>
 			</form>
@@ -284,10 +284,9 @@
 					<span class="visually-hidden">Закрыть форму</span>
 				</button>
 		</section>
-		<div class="modal-overlay"></div>
+		<div class="modal-overlay "></div>
 	</main>
-
-	<footer class="page-footer container">
+<footer class="page-footer container">
 		<ul class="social-icons">
 			<li class="social-icons__item">
 				<a class="social-icons__link social-icons__link--vk" href="https://vk.com/">
@@ -309,7 +308,7 @@
 			<p class="footer-slogan__title">Давайте дружить, это выгодно!</p>
 			<p class="footer-slogan__info">Скидка 10% для друзей из социальных сетей.</p>
 		</div>
-	</footer>
-
+</footer>
+<script src="js/script.min.js"> </script>
 </body>
 </html>
