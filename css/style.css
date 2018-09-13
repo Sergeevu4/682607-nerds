@@ -196,6 +196,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-slide__descr {
+	width: 409px;
 	margin: 0;
 	margin-bottom: 39px;
 	font-size: 16px;
@@ -222,11 +223,13 @@ input[type="radio"].visually-hidden {
 .slide-dearly {
 	background-image: url("../img/slide2-min.png");
 	background-size: 663px 430px;
+	background-position: 100% -6px;
 }
 
 .slide-hardcore {
 	background-image: url("../img/slide3-min.png");
 	background-size: 759px 411px;
+	background-position: 100% 11px;
 }
 
 .btn {
@@ -580,7 +583,7 @@ input[type="radio"].visually-hidden {
 	opacity: 0.1;
 }
 
-.orders__item:not(:nth-child(1)):not(:nth-child(5)):not(:nth-child(9))::before {
+.orders__item:not(:nth-child(4n+1))::before {
 	content: "";
 	position: absolute;
 	top: 22px;
